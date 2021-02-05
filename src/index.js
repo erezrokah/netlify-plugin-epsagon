@@ -20,7 +20,7 @@ module.exports = {
 
       await Promise.all(
         functionsList.map(async ({ name, mainFile }) => {
-          const newName = `${name}.instrumented.js`
+          const newName = `${name}.instrumented`
           const wrapped = template.replace('REQUIRE_PLACEHOLDER', `${newName}`)
           await rename(mainFile, `${path.dirname(mainFile)}/${newName}`)
           await writeFile(mainFile, wrapped)
