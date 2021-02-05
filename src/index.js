@@ -34,7 +34,10 @@ module.exports = {
           const newFunctionName = `${name}.instrumented`
 
           await rename(mainFile, `${path.dirname(mainFile)}/${newFunctionName}`)
-          await writeFile(mainFile, generateTemplate(template, newFunctionName))
+
+          const wrapper = generateTemplate(template, newFunctionName)
+          console.log(wrapper)
+          await writeFile(mainFile, wrapper)
         }),
       )
       status.show({
