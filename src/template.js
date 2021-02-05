@@ -7,6 +7,8 @@ epsagon.init({
   token: process.env.EPSAGON_TOKEN || '',
   appName: process.env.SITE_NAME,
   metadataOnly: false,
+  // eslint-disable-next-line no-undef
+  ignoredKeys: inputs.ignoredKeys,
   labels: [
     ['branch', process.env.HEAD],
     ['build-id', process.env.BUILD_ID],
