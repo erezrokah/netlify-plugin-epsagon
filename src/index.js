@@ -36,7 +36,6 @@ module.exports = {
           await rename(mainFile, `${path.dirname(mainFile)}/${newFunctionName}`)
 
           const wrapper = generateTemplate(template, newFunctionName)
-          console.log(wrapper)
           await writeFile(mainFile, wrapper)
         }),
       )
