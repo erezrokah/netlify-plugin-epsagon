@@ -1,7 +1,7 @@
 {
   "name": "netlify-plugin-epsagon",
   "version": "0.0.1",
-  "description": "Netlify Build plugin - Instrument JavaScript functions with epsagon",
+  "description": "Instrument Node.js functions with epsagon",
   "main": "src/index.js",
   "files": [
     "src",
@@ -31,7 +31,9 @@
     "ava": "cross-env FORCE_COLOR=1 ava --verbose",
     "release": "release-it"
   },
-  "dependencies": {},
+  "dependencies": {
+    "epsagon": "^1.105.0"
+  },
   "devDependencies": {
     "@netlify/build": "^9.0.0",
     "ava": "^3.13.0",
