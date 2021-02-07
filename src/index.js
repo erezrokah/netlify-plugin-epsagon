@@ -60,7 +60,7 @@ module.exports = {
         }),
       )
     } catch (error) {
-      build.failBuild('Failed to instrument functions', { error })
+      return build.failBuild('Failed to instrument functions', { error })
     }
     status.show({
       summary: `Successfully instrumented ${functionsList.length} Node.js functions`,
