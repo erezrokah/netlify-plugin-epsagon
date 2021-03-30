@@ -3,5 +3,5 @@
   ignorePresets: [':prHourlyLimit2'],
   semanticCommits: true,
   masterIssue: true,
-  automerge: false,
+  automerge: true,
 }
