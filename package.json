@@ -35,7 +35,7 @@
     "epsagon": "^1.105.0"
   },
   "devDependencies": {
-    "@netlify/build": "^10.2.5",
+    "@netlify/build": "^10.2.6",
     "ava": "^3.13.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.10.0",
