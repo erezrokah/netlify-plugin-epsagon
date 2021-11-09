@@ -5,4 +5,8 @@
   masterIssue: true,
   automerge: true,
   requiredStatusChecks: null,
+  vulnerabilityAlerts: {
+    labels: ['type: security'],
+    schedule: null,
+  },
 }
